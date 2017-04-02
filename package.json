@@ -1,0 +1,26 @@
+{
+  "name": "js-reason-react",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "rm -rf node_modules/*/node_modules/{babel-types,babylon}",
+    "build": "browserify -t babelify src/index.js -o bundle.js"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-es2016": "^6.22.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-types": "thejameskyle/babel-types",
+    "babelify": "^7.3.0",
+    "babylon": "thejameskyle/babylon#module",
+    "browserify": "^14.1.0",
+    "flow-bin": "^0.42.0"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
